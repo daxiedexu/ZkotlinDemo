@@ -1,8 +1,8 @@
 package com.haixu.zkotilndemo
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 
 private const val TAG = "MainActivity"
 class MainActivity : AppCompatActivity() {
@@ -10,6 +10,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         cale("3","-","3")
+        val customMath = CustomMath()
+        customMath.main()
     }
 
     /**
